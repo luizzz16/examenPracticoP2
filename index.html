@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="top-nav">Cuenta de Correo | Registro</div>
+        <h1 id="tituloEncabezado">Panel de Usuario</h1>
+        <nav>UdeC | Acerca | Contacto</nav>
+        <button onclick="cambiarTitulo()">Cambiar Título</button>
+    </header>
+
+    <main>
+        <form id="registroForm">
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" required>
+            
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" required>
+            
+            <div class="botones">
+                <button type="button" onclick="limpiarFormulario()">Cancelar</button>
+                <button type="submit">Crear</button>
+            </div>
+        </form>
+
+        <table id="tablaUsuarios">
+            <thead>
+                <tr>
+                    <th>Usuario</th>
+                    <th>Correo</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+
+    <footer>Derechos Reservados</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
